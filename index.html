@@ -13,125 +13,251 @@
     </div> -->
     <!-- <div style = "float: left; min-width:80%;"> -->
     <div>
-    <!-- Nagłowek strony -->
-    <div class="banner">
-      <img src="images/botc_logo.png"/>
-    </div>
-    <!-- Ukryte checkboxy do wyświetlania alternatywnej treści -->
-    <input type="checkbox" id="brewingCheckbox" />
-    <input type="checkbox" id="violetsCheckbox" />
-    <input type="checkbox" id="badMoonCheckbox" />
-    <div style="background-color:#d1d1d1; height: 10px"></div>
-    <!-- Pasek nawigazji z edycjami -->
-    <div class="topnav">
-      <div class="brewingTopNav">
-        <label for="brewingCheckbox"><img src="images/TroubleBrewing.png"/></label>
+      <!-- Nagłowek strony -->
+      <div class="banner">
+        <img alt="Logo" src="images/botc_logo.png" />
       </div>
-      <div class="violetsTopNav">
-        <label for="violetsCheckbox"><img src="images/Violets.png" /></label>
+      <!-- Ukryte checkboxy do wyświetlania alternatywnej treści -->
+      <input type="checkbox" id="brewingCheckbox" />
+      <input type="checkbox" id="violetsCheckbox" />
+      <input type="checkbox" id="badMoonCheckbox" />
+      <div style="background-color: #d1d1d1; height: 10px"></div>
+      <!-- Pasek nawigazji z edycjami gry -->
+      <div class="topnav">
+        <div class="brewingTopNav">
+          <label for="brewingCheckbox"
+            ><img alt="Logo" src="images/TroubleBrewing.png"
+          /></label>
+        </div>
+        <div class="violetsTopNav">
+          <label for="violetsCheckbox"
+            ><img alt="Logo" src="images/Violets.png"
+          /></label>
+        </div>
+        <div class="badMoonTopNav">
+          <label for="badMoonCheckbox"
+            ><img alt="Logo" src="images/BadMoon.png"
+          /></label>
+        </div>
       </div>
-      <div class="badMoonTopNav">
-        <label for="badMoonCheckbox"><img src="images/BadMoon.png" /></label>
+      <!-- Wersja widoku po naciśnięciu Ikony brewing -->
+      <div class="header brewingHeader">
+        <h1>Trouble Brewing</h1>
+        <p>
+          has a little bit of everything. Some characters passively receive
+          information, some need to take action to learn who is who, while some
+          simply want to bait the Demon into attacking them. Both good and evil
+          can gain the upper hand by making well-timed sacrifices. Trouble
+          Brewing is a relatively straightforward Demon-hunt, but evil has a
+          number of dastardly misinformation tricks up their sleeves, so the
+          good players best question what they think they know if they hope to
+          survive.
+        </p>
+        <p>
+          Beginner. Recommended for players and Storytellers new to Blood on the
+          Clocktower or to social deception games.
+        </p>
+      </div>
+      <div class="brewing row">
+        <div class="column">
+          <p>TOWNSFOLKS</p>
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Washerwoman_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Virgin_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Undertaker_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Soldier_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Slayer_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Ravenkeeper_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Monk_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Mayor_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Librarian_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Investigator_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Empath_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Fortune_Teller_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Townsfolk/Chef_Icon.png"
+          />
+        </div>
+        <div class="column">
+          <p>OUTSIDERS</p>
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Outsiders/Butler_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Outsiders/Drunk_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Outsiders/Recluse_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Outsiders/Saint_Icon.png"
+          />
+        </div>
+
+        <div class="column">
+          <p>MINIONS</p>
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Evil/Baron_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Evil/Poisoner_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Evil/Scarlet_Woman_Icon.png"
+          />
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Evil/Spy_Icon.png"
+          />
+        </div>
+
+        <div class="column">
+          <p>DEMONS</p>
+          <img
+            alt="Logo"
+            class="roleImg"
+            src="images/TroubleBrewing/Evil/Imp_Icon.png"
+          />
+        </div>
+      </div>
+      <!-- Wersja widoku po naciśnięciu Ikony Violets -->
+      <div class="header violetsHeader">
+        <h1>Sects & Violets</h1>
+        <p>
+          is the craziest of the three editions included in the base set. Good
+          characters get amazing information each and every night. However, the
+          evil team is extremely varied and threatening and can throw massive
+          confusion into the mix. Characters change alignment. Players change
+          characters. Even the evil team can lose track of who is who. This is
+          also the first appearance of madness, which throws all manner of
+          spanners into the works.
+        </p>
+        <p>
+          Intermediate. Recommended for players who want to do wild and
+          unexpected things, pushing the limits of what can be achieved in a
+          bluffing game.
+        </p>
+      </div>
+      <div class="violets row">
+        <div class="column">
+          <img src="images/Violets.png" />
+        </div>
+        <div class="column">
+          <img src="images/Violets.png" />
+        </div>
+
+        <div class="column">
+          <img src="images/Violets.png" />
+        </div>
+
+        <div class="column">
+          <img src="images/Violets.png" />
+        </div>
+      </div>
+      <!-- Wersja widoku po naciśnięciu Ikony Bad Moon -->
+      <div class="header badMoonHeader">
+        <h1>Bad Moon Rising</h1>
+        <p>
+          is a death extravaganza. Demons kill multiple times per night, and
+          Minions get in on the action too. Good players can take great risks to
+          gain reliable information, but may accidentally kill their friends in
+          the process. Luckily, there are many options to keep players alive
+          long past their use-by date. If the good team cannot determine which
+          specific Minions and Demons are in play, however, their doom is all
+          but certain.
+        </p>
+        <p>
+          Intermediate. Recommended for players who are proactive, dedicated to
+          working as a team, and don’t fear dying.
+        </p>
       </div>
 
-    </div>
-    <div class="header brewingHeader">
-      <h1>Trouble Brewing</h1>
-      <p> has a little bit of everything. Some characters passively receive information, some need to take action to learn who is who, while some simply want to bait the Demon into attacking them. Both good and evil can gain the upper hand by making well-timed sacrifices. Trouble Brewing is a relatively straightforward Demon-hunt, but evil has a number of dastardly misinformation tricks up their sleeves, so the good players best question what they think they know if they hope to survive.</p>
-      <p>Beginner. Recommended for players and Storytellers new to Blood on the Clocktower or to social deception games.</p>
-  </div>
-  <div class="brewing row">
-    <div class="column">
-      <p>TOWNSFOLKS</p>
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Washerwoman_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Virgin_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Undertaker_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Soldier_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Slayer_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Ravenkeeper_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Monk_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Mayor_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Librarian_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Investigator_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Empath_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Fortune_Teller_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Townsfolk/Chef_Icon.png" />
-    </div>
-    <div class="column">
-      <p>OUTSIDERS</p>
-      <img class="roleImg" src="images/TroubleBrewing/Outsiders/Butler_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Outsiders/Drunk_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Outsiders/Recluse_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Outsiders/Saint_Icon.png" />
-    </div>
+      <div class="badMoon row">
+        <div class="column">
+          <img alt="Logo" src="images/BadMoon.png" />
+        </div>
+        <div class="column">
+          <img alt="Logo" src="images/BadMoon.png" />
+        </div>
 
-    <div class="column">
-      <p>MINIONS</p>
-      <img class="roleImg" src="images/TroubleBrewing/Evil/Baron_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Evil/Poisoner_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Evil/Scarlet_Woman_Icon.png" />
-      <img class="roleImg" src="images/TroubleBrewing/Evil/Spy_Icon.png" />
-    </div>
+        <div class="column">
+          <img alt="Logo" src="images/BadMoon.png" />
+        </div>
 
-    <div class="column">
-      <p>DEMONS</p>
-      <img class="roleImg" src="images/TroubleBrewing/Evil/Imp_Icon.png" />
-    </div>
-  </div>
- 
-    <div class="header violetsHeader">
-      <h1>Sects & Violets</h1>
-      <p>is the craziest of the three editions included in the base set. Good characters get amazing information each and every night. However, the evil team is extremely varied and threatening and can throw massive confusion into the mix. Characters change alignment. Players change characters. Even the evil team can lose track of who is who. This is also the first appearance of madness, which throws all manner of spanners into the works.</p>
-      <p>Intermediate. Recommended for players who want to do wild and unexpected things, pushing the limits of what can be achieved in a bluffing game.</p>
-  </div>
-    <div class="violets row">
-      <div class="column">
-        <img  src="images/Violets.png" />
-      </div>
-      <div class="column">
-        <img  src="images/Violets.png" />
-      </div>
-
-      <div class="column">
-        <img  src="images/Violets.png" />
-      </div>
-
-      <div class="column">
-        <img  src="images/Violets.png" />
+        <div class="column">
+          <img alt="Logo" src="images/BadMoon.png" />
+        </div>
       </div>
     </div>
-
-
-    <div class="header badMoonHeader">
-      <h1>Bad Moon Rising</h1>
-      <p>is a death extravaganza. Demons kill multiple times per night, and Minions get in on the action too. Good players can take great risks to gain reliable information, but may accidentally kill their friends in the process. Luckily, there are many options to keep players alive long past their use-by date. If the good team cannot determine which specific Minions and Demons are in play, however, their doom is all but certain.</p>
-    <p>Intermediate. Recommended for players who are proactive, dedicated to working as a team, and don’t fear dying.</p>
-    </div>
-
-  <div class="badMoon row">
-    <div class="column">
-
-      <img src="images/BadMoon.png" />
-    </div>
-    <div class="column">
-      <img src="images/BadMoon.png" />
-    </div>
-
-    <div class="column">
-      <img src="images/BadMoon.png" />
-    </div>
-
-    <div class="column">
-      <img src="images/BadMoon.png" />
-    </div>
-  </div>
-</div>
-
-
+<!-- Zrobimy jakiąś stópkę  -->
     <div class="footer">
       <h1>Footer</h1>
-      <p>Yeee... propably gonna add some content here in the future</p>
+      <p>If you fill like this page is lack of content. Click any logo. </p>
+      <p>Yeee... propably gonna add some content here in the future </p>
     </div>
-
   </body>
 </html>
