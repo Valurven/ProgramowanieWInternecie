@@ -4,6 +4,7 @@
     <title>CSS Website Layout</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="index.js"></script>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -16,6 +17,29 @@
       <!-- Nagłowek strony -->
       <div class="banner">
         <img alt="Logo" src="images/botc_logo.png" />
+      </div>
+      <div style="background-color: #d1d1d1; height: 10px"></div>
+      <div  style="min-height:400px ;background-color: #d1d1d1">
+        <div id="XOWinBanner" > 
+
+        <div class=XOWinBanner> Congratulation!! <br><br>
+        </div>
+        </div>
+        <table id="XOContainer" if:true{areYouWinning}>
+          <tr>
+             <td id=xoField1 onclick="handleClickField()" ></td> <td id=xoField2 onclick="handleClickField()" ></td> <td id=xoField3 onclick="handleClickField()" ></td>
+          </tr>
+          <tr>
+             <td id=xoField4 onclick="handleClickField()" ></td> <td id=xoField5 onclick="handleClickField()" ></td> <td id=xoField6 onclick="handleClickField()" ></td>
+          </tr>
+          <tr>
+             <td id=xoField7 onclick="handleClickField()" ></td> <td id=xoField8 onclick="handleClickField()" ></td> <td id=xoField9 onclick="handleClickField()" ></td>
+          </tr>
+       </table>
+       <div class="XOResetButtonCointener">
+       <button class="XOResetButton" onclick="newXOGame()"> Play Again</button>
+      </div>
+
       </div>
       <!-- Ukryte checkboxy do wyświetlania alternatywnej treści -->
       <input type="checkbox" id="brewingCheckbox" />
