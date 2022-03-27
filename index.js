@@ -64,9 +64,6 @@ function checkWinCondition(){
     displaywinnerBanner()
 }
 
-function getWinner(){
-    return winner
-}
 function displaywinnerBanner(){
 if(areYouWinning==true) {
     document.getElementById('XOContainer').style.display="none";
