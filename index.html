@@ -25,7 +25,7 @@
         <div class=XOWinBanner> Congratulation!! <br><br>
         </div>
         </div>
-        <div if:true={areYouWinning}>
+        <tamplate if:true={areYouWinning}>
         <table id="XOContainer" >
           <tr>
              <td id=xoField1 onclick="handleClickField()" ></td> <td id=xoField2 onclick="handleClickField()" ></td> <td id=xoField3 onclick="handleClickField()" ></td>
@@ -37,7 +37,7 @@
              <td id=xoField7 onclick="handleClickField()" ></td> <td id=xoField8 onclick="handleClickField()" ></td> <td id=xoField9 onclick="handleClickField()" ></td>
           </tr>
        </table>
-      </div>
+      </tamplate>
        <div class="XOResetButtonCointener">
        <button class="XOResetButton" onclick="newXOGame()"> Play Again</button>
       </div>
