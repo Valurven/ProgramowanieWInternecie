@@ -15,20 +15,35 @@ function newXOGame(){
     document.getElementById('xoField7').innerHTML='';
     document.getElementById('xoField8').innerHTML='';
     document.getElementById('xoField9').innerHTML='';
+    document.getElementById('xoField1').style='font-size: 10px;';
+    document.getElementById('xoField2').style='font-size: 10px;';
+    document.getElementById('xoField3').style='font-size: 10px;';
+    document.getElementById('xoField4').style='font-size: 10px;';
+    document.getElementById('xoField5').style='font-size: 10px;';
+    document.getElementById('xoField6').style='font-size: 10px;';
+    document.getElementById('xoField7').style='font-size: 10px;';
+    document.getElementById('xoField8').style='font-size: 10px;';
+    document.getElementById('xoField9').style='font-size: 10px;';
 }
 playerTurn = 'X';
 areYouWinning =false;
 winner = '';
 
 function handleClickField(){
+    console.log(event.target);
+    console.log(event.target);
+    console.log(event.target);
+    console.log(event.target);
     if(event.target.innerHTML==''){
         if(playerTurn=='X'){
-        event.target.innerHTML='X'
-        this.playerTurn='O'
+        event.target.innerHTML='X';
+        event.target.style='transition: 1.5s; font-size: 60px;';
+        this.playerTurn='O';
     }
     else if(playerTurn=='O'){
-            event.target.innerHTML='O'
-            this.playerTurn='X'
+            event.target.innerHTML='O';
+            event.target.style='transition: 1.5s; font-size: 60px;';
+            this.playerTurn='X';
     }}
     checkWinCondition();    
 }
