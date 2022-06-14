@@ -88,19 +88,15 @@ fetch("/ProgramowanieWInternecie/language/en.json")
   console.log(response.test);
    return response;
 })
-.then(function(products){
+.then(function(response){
    let placeholder = document.querySelector("#data-output");
    let out = "";
-   for(let product of products){
       out += `
-         <tr>
-            <td>${product.test}</td>
-            <td>${product.testt}</td>
-            <td>${product.testtt}</td>
-         </tr>
+            <div>Tratatatat</div>
+            <div>${response.test}</div>
+            <div>${response.testt}</div>
+            <div>${response.testtt}</div>
       `;
-   }
- 
    placeholder.innerHTML = out;
 });
 
