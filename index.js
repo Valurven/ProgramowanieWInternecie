@@ -82,7 +82,7 @@ function brewingMenuHandler(){
 // //       $('#div1').text(pl.test1);
 // }
 
-fetch("/language/en.json")
+fetch("/ProgramowanieWInternecie/language/en.json")
 .then(function(response){
   console.log(response.json());
    return response.json();
