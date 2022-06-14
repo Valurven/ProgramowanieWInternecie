@@ -1,3 +1,115 @@
+
+
+// Pasek nawigacji
+isSideMenuOpen =false;
+isXOGameDisplay = false;
+
+
+function openNav() {
+
+    if(isSideMenuOpen==false){
+  document.getElementById("mySidenav").style.height = "40%";
+
+  isSideMenuOpen=true;
+    }
+    else{;
+        document.getElementById("mySidenav").style.height = "0";
+        isSideMenuOpen=false;
+    }
+}
+
+
+
+function displayXOGame() {
+    if(isXOGameDisplay==false){
+        document.getElementById("XOgame").style.display = "block";
+        isXOGameDisplay=true;
+          }
+          else{
+            document.getElementById("XOgame").style.display = "none";
+            isXOGameDisplay=false;
+          }
+    
+}
+
+
+function brewingCheckboxHandler(){
+document.getElementById("violetsCheckbox").checked = false ;
+document.getElementById("badMoonCheckbox").checked = false ;
+}
+function violetsCheckboxHandler(){
+document.getElementById("brewingCheckbox").checked = false ;
+document.getElementById("badMoonCheckbox").checked = false ;
+}
+function badMoonCheckboxHandler(){
+document.getElementById("brewingCheckbox").checked = false ;
+document.getElementById("violetsCheckbox").checked = false ;
+}
+
+function brewingMenuHandler(){
+  document.getElementById("brewingCheckbox").checked = true ;
+  document.getElementById("violetsCheckbox").checked = false ;
+  document.getElementById("badMoonCheckbox").checked = false ;
+  }
+  function violetsMenuHandler(){
+    document.getElementById("brewingCheckbox").checked = false ;
+    document.getElementById("violetsCheckbox").checked = true ;
+    document.getElementById("badMoonCheckbox").checked = false ;
+  }
+  function badMoonMenuHandler(){
+    document.getElementById("brewingCheckbox").checked = false ;
+    document.getElementById("violetsCheckbox").checked = false ;
+    document.getElementById("badMoonCheckbox").checked = true ;
+  }
+
+
+//Skrypt do języków
+
+// var language='pl'; 
+// function getLanguage() {
+//   console.log("getLanguage processing");
+// (localStorage.getItem('language') == null) ? setLanguage('en') : false;
+// $.ajax({ 
+// url:  'language/' +  localStorage.getItem('language') + '.json', 
+// dataType: 'json', async: false, dataType: 'json', 
+// success: function (lang) { language = lang } });
+// }
+
+// function setLanguage(lang) {
+//   console.log("setLanguage with atribute : ",lang);
+// localStorage.setItem('language', lang);
+// // console.log(JSON);
+// //       $('#div1').text(pl.test1);
+// }
+
+fetch("pl.json")
+.then(function(response){
+  console.log(response.json());
+   return response.json();
+})
+.then(function(products){
+   let placeholder = document.querySelector("#data-output");
+   let out = "";
+   for(let product of products){
+      out += `
+         <tr>
+            <td> <img src='${product.image}'> </td>
+            <td>${product.name}</td>
+            <td>${product.price}</td>
+            <td>${product.inventory}</td>
+            <td>${product.productCode}</td>
+         </tr>
+      `;
+   }
+ 
+   placeholder.innerHTML = out;
+});
+
+
+
+
+
+// Gra w kółko i krzyrzyk
 function newXOGame(){
     playerTurn = 'X';
     areYouWinning =false;
@@ -86,3 +198,4 @@ if(areYouWinning==true) {
     window.alert("Winner is "+ winner);
 }
 }
+
