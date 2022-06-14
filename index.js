@@ -82,7 +82,7 @@ function brewingMenuHandler(){
 // //       $('#div1').text(pl.test1);
 // }
 
-fetch("pl.json")
+fetch("/language/en.json")
 .then(function(response){
   console.log(response.json());
    return response.json();
@@ -93,11 +93,9 @@ fetch("pl.json")
    for(let product of products){
       out += `
          <tr>
-            <td> <img src='${product.image}'> </td>
-            <td>${product.name}</td>
-            <td>${product.price}</td>
-            <td>${product.inventory}</td>
-            <td>${product.productCode}</td>
+            <td>${product.test}</td>
+            <td>${product.testt}</td>
+            <td>${product.testtt}</td>
          </tr>
       `;
    }
