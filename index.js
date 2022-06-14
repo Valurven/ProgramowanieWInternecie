@@ -86,7 +86,7 @@ fetch("/ProgramowanieWInternecie/language/en.json")
 .then(function(response){
   console.log(response);
   console.log(response.test);
-   return response.json();
+   return response;
 })
 .then(function(products){
    let placeholder = document.querySelector("#data-output");
