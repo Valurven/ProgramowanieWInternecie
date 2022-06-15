@@ -100,6 +100,10 @@ fetch("/ProgramowanieWInternecie/language/en.json")
             <div>${response.testtt}</div>
       `;
    placeholder.innerHTML = out;
+})
+.catch(error=>{
+  console.log('error');
+  console.error(error);
 });
 
 
