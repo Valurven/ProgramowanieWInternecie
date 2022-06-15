@@ -89,10 +89,12 @@ fetch("/ProgramowanieWInternecie/language/en.json")
    return response.json;
 })
 .then(function(response){
+  console.log(response);
    let placeholder = document.querySelector("#data-output");
    let out = "";
       out += `
             <div>Tratatatat</div>
+            <div>${response}</div>
             <div>${response.test}</div>
             <div>${response.testt}</div>
             <div>${response.testtt}</div>
