@@ -84,8 +84,6 @@ function brewingMenuHandler(){
 
 fetch("/ProgramowanieWInternecie/language/en.json")
 .then(response =>{
-  console.log(response.json());
-  console.log(response.json().test);
    return response.json();
 })
 .then(response =>{
