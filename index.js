@@ -13,7 +13,7 @@ function onloadHandel(){
 function openNav() {
 
     if(isSideMenuOpen==false){
-  document.getElementById("mySidenav").style.height = "43%";
+  document.getElementById("mySidenav").style.height = "fit-content";
 
   isSideMenuOpen=true;
     }
