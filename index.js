@@ -1,10 +1,15 @@
 
-
-// Pasek nawigacji
 isSideMenuOpen =false;
 isXOGameDisplay = false;
 pagelanguage='/ProgramowanieWInternecie/language/en.json';
 
+
+
+function onloadHandel(){
+  changeLanguage();
+}
+
+// Pasek nawigacji
 function openNav() {
 
     if(isSideMenuOpen==false){
