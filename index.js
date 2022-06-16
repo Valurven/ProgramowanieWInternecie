@@ -3,7 +3,7 @@
 // Pasek nawigacji
 isSideMenuOpen =false;
 isXOGameDisplay = false;
-
+pagelanguage='en';
 
 function openNav() {
 
@@ -65,24 +65,7 @@ function brewingMenuHandler(){
 
 //Skrypt do języków
 
-// var language='pl'; 
-// function getLanguage() {
-//   console.log("getLanguage processing");
-// (localStorage.getItem('language') == null) ? setLanguage('en') : false;
-// $.ajax({ 
-// url:  'language/' +  localStorage.getItem('language') + '.json', 
-// dataType: 'json', async: false, dataType: 'json', 
-// success: function (lang) { language = lang } });
-// }
-
-// function setLanguage(lang) {
-//   console.log("setLanguage with atribute : ",lang);
-// localStorage.setItem('language', lang);
-// // console.log(JSON);
-// //       $('#div1').text(pl.test1);
-// }
-
-fetch("/ProgramowanieWInternecie/language/en.json")
+fetch("/ProgramowanieWInternecie/language/pl.json")
 .then(response =>{
    return response.json();
 })
@@ -98,15 +81,35 @@ fetch("/ProgramowanieWInternecie/language/en.json")
             <div>${response.testtt}</div>
       `;
    placeholder.innerHTML = out;
-})
+   
+   document.querySelector("#MLtext1").innerHTML =  "${response.MLtext1}";
+   document.querySelector("#MLtext2").innerHTML =  "${response.MLtext2}";
+   document.querySelector("#MLtext3").innerHTML =  "${response.MLtext3}";
+   document.querySelector("#MLtext4").innerHTML =  "${response.MLtext4}";
+   document.querySelector("#MLtext5").innerHTML =  "${response.MLtext5}";
+   document.querySelector("#MLtext6").innerHTML =  "${response.MLtext6}";
+   document.querySelector("#MLtext7").innerHTML =  "${response.MLtext7}";
+   document.querySelector("#MLtext8").innerHTML =  "${response.MLtext8}";
+   document.querySelector("#MLtext9").innerHTML =  "${response.MLtext9}";
+   document.querySelector("#MLtext10").innerHTML =  "${response.MLtext10}";
+   document.querySelector("#MLtext11").innerHTML =  "${response.MLtext11}";
+   document.querySelector("#MLtext12").innerHTML =  "${response.MLtext12}";
+   document.querySelector("#MLtext13").innerHTML =  "${response.MLtext13}";
+
+}
+)
 .catch(error=>{
   console.log('error');
   console.error(error);
 });
 
 
-
-
+function changeTheLanguage(){  }
+  // if(pagelanguage=='en'){
+  //   pagelanguage='pl';
+  //   }
+  //   else pagelanguage='en';
+  // }
 
 // Gra w kółko i krzyrzyk
 function newXOGame(){

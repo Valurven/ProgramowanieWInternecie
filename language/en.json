@@ -1,5 +1,21 @@
 { 
-    "test": "eng-test1", 
-    "testt": "eng-test2",
-    "testtt": "eng-test3" 
-}
+   "test": "eng-test1",
+   "testt": "eng-test2",
+   "testtt": "eng-test3",
+   "#MLtext1" : "What is this game? ",
+   "#MLtext2" : "Blood on the Clocktower is a social game of deduction and deception, lies and logic, murder and mystery, for 5 to 20 players. During the day, players talk and socialize as a group or go into private conversations to gather information, share what they know, or spread lies. During the night, players close their eyes, whilst some good players wake to learn valuable information and the demon and its minions wake up to spread their mischief. ",
+   "#MLtext3" : "Each player is a unique character, with a powerful ability to use or a troublesome penalty to avoid. Clocktower is mostly a talking game, with almost no physical pieces for the players to use. Players win or lose by their wits, their insight and their ability to convince others about who should live and who should die. Blood on the Clocktower games usually run for 30 to 90 minutes, and you may find yourselves playing several games one after the other. ",
+   "#MLtext4" : "Choose your Edition: ",
+   "#MLtext5" : "has a little bit of everything. Some characters passively receive information, some need to take action to learn who is who, while some simply want to bait the Demon into attacking them. Both good and evil can gain the upper hand by making well-timed sacrifices. Trouble Brewing is a relatively straightforward Demon-hunt, but evil has a number of dastardly misinformation tricks up their sleeves, so the good players best question what they think they know if they hope to survive. ",
+   "#MLtext6" : "Beginner. Recommended for players and Storytellers new to Blood on the Clocktower or to social deception games. ",
+   "#MLtext7" : "is the craziest of the three editions included in the base set. Good characters get amazing information each and every night. However, the evil team is extremely varied and threatening and can throw massive confusion into the mix. Characters change alignment. Players change characters. Even the evil team can lose track of who is who. This is also the first appearance of madness, which throws all manner of spanners into the works. ",
+   "#MLtext8" : "Intermediate. Recommended for players who want to do wild and unexpected things, pushing the limits of what can be achieved in a bluffing game. ",
+   "#MLtext9" : "is a death extravaganza. Demons kill multiple times per night, and Minions get in on the action too. Good players can take great risks to gain reliable information, but may accidentally kill their friends in the process. Luckily, there are many options to keep players alive long past their use-by date. If the good team cannot determine which specific Minions and Demons are in play, however, their doom is all but certain. ",
+   "#MLtext10" : "Intermediate. Recommended for players who are proactive, dedicated to working as a team, and don’t fear dying. ",
+   "#MLtext11" : "Footer ",
+   "#MLtext12" : "If you fill like this page is lack of content. Click any logo. ",
+   "#MLtext13" : "Yeee... propably gonna add some content here in the future "
+    }
+
+
+   
