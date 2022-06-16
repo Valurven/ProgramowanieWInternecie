@@ -23,9 +23,14 @@ function openNav() {
     }
 }
 
+function closeNav(){
+  document.getElementById("mySidenav").style.height = "0";
+  isSideMenuOpen=false;
+}
 
 
 function displayXOGame() {
+  closeNav();
     if(isXOGameDisplay==false){
         document.getElementById("XOgame").style.display = "block";
         isXOGameDisplay=true;
@@ -52,16 +57,19 @@ document.getElementById("violetsCheckbox").checked = false ;
 }
 
 function brewingMenuHandler(){
+  closeNav();
   document.getElementById("brewingCheckbox").checked = true ;
   document.getElementById("violetsCheckbox").checked = false ;
   document.getElementById("badMoonCheckbox").checked = false ;
   }
   function violetsMenuHandler(){
+    closeNav();
     document.getElementById("brewingCheckbox").checked = false ;
     document.getElementById("violetsCheckbox").checked = true ;
     document.getElementById("badMoonCheckbox").checked = false ;
   }
   function badMoonMenuHandler(){
+    closeNav();
     document.getElementById("brewingCheckbox").checked = false ;
     document.getElementById("violetsCheckbox").checked = false ;
     document.getElementById("badMoonCheckbox").checked = true ;
