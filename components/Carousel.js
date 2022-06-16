@@ -15,15 +15,15 @@ class Carousel extends HTMLElement {
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img  src="images/Belphegorrs.webp" alt="carousel1" style="height:800px;">
+            <img  src="images/Belphegorrs.webp" alt="carousel1" style="height:600px;">
           </div>
 
           <div class="item">
-            <img  src="images/ImpSlider.jpg" alt="carousel2" style="height:800px">
+            <img  src="images/ImpSlider.jpg" alt="carousel2" style="height:600px">
           </div>
 
           <div class="item">
-            <img  src="images/ZombuulSlider.png" alt="carousel3" style="height:800px;">
+            <img  src="images/ZombuulSlider.png" alt="carousel3" style="height:600px;">
           </div>
         
           
