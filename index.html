@@ -49,17 +49,17 @@
         </p>
         <p id="MLtext3">
         </p>
-        <h1 id="MLtext4" id="editionChoose"></h1>
+        <h1 class="hideOnMobile" id="MLtext4" id="editionChoose"></h1>
       </div>          
       
-      </div>
+    </div>
       <!-- Ukryte checkboxy do wyświetlania alternatywnej treści -->
       <input type="checkbox" onchange="brewingCheckboxHandler()" id="brewingCheckbox" />
       <input type="checkbox" onchange="violetsCheckboxHandler()" id="violetsCheckbox" />
       <input type="checkbox" onchange="badMoonCheckboxHandler()" id="badMoonCheckbox" />
       <div style="background-color: #d1d1d1; height: 10px"></div>
       <!-- Pasek nawigazji z edycjami gry -->
-      <div class="topnav">
+      <div class="topnav hideOnMobile">
         <div class="brewingTopNav">
           <label for="brewingCheckbox"
             ><img alt="Logo" src="images/TroubleBrewing.png"
@@ -112,7 +112,7 @@
 
 <div id="cookieBanner" class="cookieBanner">Ta strona może korzystać z plików cookie. Ale nie musi.. Muszę poczytać czym tak właściwie są pliki cookie żeby z czystym sumieniem potwierdzić..  
   <div>
-    <button onclick="cookieButtonHandler()">
+    <button class="cookieButton" onclick="cookieButtonHandler()">
       Lubie ciastka.
     </button>
   </div>
