@@ -99,6 +99,12 @@ function changeTheLanguagePl(){
     pagelanguage='/ProgramowanieWInternecie/language/pl.json';
   }
 
+function cookieButtonHandler(){
+  document.querySelector("#cookieBanner").innerHTML = '';
+}
+
+  
+
 // Gra w kółko i krzyrzyk
 function newXOGame(){
     playerTurn = 'X';
