@@ -71,30 +71,27 @@ fetch("/ProgramowanieWInternecie/language/pl.json")
 })
 .then(response =>{
   console.log(response);
-   let placeholder = document.querySelector("#data-output");
-   let out = "";
-      out += `
+    document.querySelector("#data-output").innerHTML=`
             <div>Tratatatat</div>
             <div>${response}</div>
             <div>${response.test}</div>
             <div>${response.testt}</div>
             <div>${response.testtt}</div>
       `;
-   placeholder.innerHTML = out;
-   
-   document.querySelector("#MLtext1").innerHTML =  `${response.MLtext1}`;
-   document.querySelector("#MLtext2").innerHTML =   `${response.MLtext2 }`;
-   document.querySelector("#MLtext3").innerHTML =   `${response.MLtext3 }`;
-   document.querySelector("#MLtext4").innerHTML =   `${response.MLtext4 }`;
-   document.querySelector("#MLtext5").innerHTML =   `${response.MLtext5 }`;
-   document.querySelector("#MLtext6").innerHTML =   `${response.MLtext6 }`;
-   document.querySelector("#MLtext7").innerHTML =   `${response.MLtext7 }`;
-   document.querySelector("#MLtext8").innerHTML =   `${response.MLtext8 }`;
-   document.querySelector("#MLtext9").innerHTML =   `${response.MLtext9 }`;
-   document.querySelector("#MLtext10").innerHTML =   `${response.MLtext10 }`;
-   document.querySelector("#MLtext11").innerHTML =   `${response.MLtext11 }`;
-   document.querySelector("#MLtext12").innerHTML =   `${response.MLtext12 }`;
-   document.querySelector("#MLtext13").innerHTML =   `${response.MLtext13 }`;
+      
+   document.querySelector("#MLtext1").innerHTML = `${response.MLtext1}`;
+   document.querySelector("#MLtext2").innerHTML = `${response.MLtext2 }`;
+   document.querySelector("#MLtext3").innerHTML = `${response.MLtext3 }`;
+   document.querySelector("#MLtext4").innerHTML = `${response.MLtext4 }`;
+   document.querySelector("#MLtext5").innerHTML = `${response.MLtext5 }`;
+   document.querySelector("#MLtext6").innerHTML = `${response.MLtext6 }`;
+   document.querySelector("#MLtext7").innerHTML = `${response.MLtext7 }`;
+   document.querySelector("#MLtext8").innerHTML = `${response.MLtext8 }`;
+   document.querySelector("#MLtext9").innerHTML = `${response.MLtext9 }`;
+   document.querySelector("#MLtext10").innerHTML = `${response.MLtext10 }`;
+   document.querySelector("#MLtext11").innerHTML = `${response.MLtext11 }`;
+   document.querySelector("#MLtext12").innerHTML = `${response.MLtext12 }`;
+   document.querySelector("#MLtext13").innerHTML = `${response.MLtext13 }`;
 
 }
 )
