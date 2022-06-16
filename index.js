@@ -64,7 +64,7 @@ function brewingMenuHandler(){
 
 
 //Skrypt do języków
-
+async function changeLanguage(){
 fetch(pagelanguage)
 .then(response =>{
    return response.json();
@@ -90,17 +90,19 @@ fetch(pagelanguage)
   console.log('error');
   console.error(error);
 });
-
+}
 
 function changeTheLanguageEn(){  
     pagelanguage='/ProgramowanieWInternecie/language/en.json';
+    changeLanguage();
   }
 function changeTheLanguagePl(){  
     pagelanguage='/ProgramowanieWInternecie/language/pl.json';
+    changeLanguage();
   }
 
 function cookieButtonHandler(){
-  document.querySelector("#cookieBanner").innerHTML = '';
+  document.querySelector("#cookieBanner").style = 'display:none';
 }
 
   
