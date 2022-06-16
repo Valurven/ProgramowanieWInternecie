@@ -281,6 +281,8 @@ font-size: 40px;
   padding-right: 15px;
 }
 
+@media (max-width: 840px){
 .hideOnMobile{
   display: none;
+}
 }
