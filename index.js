@@ -3,7 +3,7 @@
 // Pasek nawigacji
 isSideMenuOpen =false;
 isXOGameDisplay = false;
-pagelanguage='en';
+pagelanguage='/ProgramowanieWInternecie/language/en.json';
 
 function openNav() {
 
@@ -65,7 +65,7 @@ function brewingMenuHandler(){
 
 //Skrypt do języków
 
-fetch("/ProgramowanieWInternecie/language/pl.json")
+fetch(pagelanguage)
 .then(response =>{
    return response.json();
 })
@@ -93,10 +93,10 @@ fetch("/ProgramowanieWInternecie/language/pl.json")
 
 
 function changeTheLanguageEn(){  
-    pagelanguage='pl';
+    pagelanguage='/ProgramowanieWInternecie/language/en.json';
   }
 function changeTheLanguagePl(){  
-    pagelanguage='en';
+    pagelanguage='/ProgramowanieWInternecie/language/pl.json';
   }
 
 // Gra w kółko i krzyrzyk

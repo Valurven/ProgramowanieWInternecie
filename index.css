@@ -250,3 +250,11 @@ font-size: 40px;
 .carousel{
   text-align: -webkit-center;
 }
+
+.changeLanguage{
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  color: white;
+  right: 10px;
+}
