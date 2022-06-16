@@ -70,15 +70,6 @@ fetch("/ProgramowanieWInternecie/language/pl.json")
    return response.json();
 })
 .then(response =>{
-  console.log(response);
-    document.querySelector("#data-output").innerHTML=`
-            <div>Tratatatat</div>
-            <div>${response}</div>
-            <div>${response.test}</div>
-            <div>${response.testt}</div>
-            <div>${response.testtt}</div>
-      `;
-
    document.querySelector("#MLtext1").innerHTML = `${response.MLtext1}`;
    document.querySelector("#MLtext2").innerHTML = `${response.MLtext2 }`;
    document.querySelector("#MLtext3").innerHTML = `${response.MLtext3 }`;
@@ -101,12 +92,12 @@ fetch("/ProgramowanieWInternecie/language/pl.json")
 });
 
 
-function changeTheLanguage(){  }
-  // if(pagelanguage=='en'){
-  //   pagelanguage='pl';
-  //   }
-  //   else pagelanguage='en';
-  // }
+function changeTheLanguageEn(){  
+    pagelanguage='pl';
+  }
+function changeTheLanguagePl(){  
+    pagelanguage='en';
+  }
 
 // Gra w kółko i krzyrzyk
 function newXOGame(){
