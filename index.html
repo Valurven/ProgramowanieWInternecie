@@ -22,7 +22,7 @@
       <a href="javascript:void(0)" class="menuButton" onclick="openNav()"
       ><span>&#9884;</span> Menu <span>&#9884;</span></a>
       
-      <a onclick="displayXOGame()">Tic Tac Toe</a>
+      <a id="textTicTacToe" onclick="displayXOGame()">Tic Tac Toe</a>
       <a  href="#editionChoose" onclick="brewingMenuHandler()">Trouble Brewing</a>
       <a  href="#editionChoose" onclick="violetsMenuHandler()">Sects & Violets</a>
       <a  href="#editionChoose" onclick="badMoonMenuHandler()">Bad Moon Rising</a>
@@ -34,27 +34,12 @@
     </div>
     <!-- Koniec nagłówka -->
 
-    <!-- <div style="text-align:center;">  
-      <div href="#" onclick="setLanguage('en')">English</div> 
-      <div href="#" onclick="setLanguage('pl')">Polski</div>
+      <div style="text-align:center; ">  
+      <div style="cursor:pointer; border: solid 2px; width:80px; margin:5px;" href="#" onclick="changeTheLanguage()">English</div> 
+      <div style="cursor:pointer; border: solid 2px; width:80px; margin:5px;" href="#" onclick="changeTheLanguage()">Polski</div>
+      </div>
 
-      <div id="div1">sss</div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      getLanguage();
-      console.log(localStorage);
-      $('#div1').text(language.test);
-    });
-
-    </script> -->
-
-
-    <div id="data-output">bom</div>
-
-
+      <div id="data-output">bom</div>
 
 
 
@@ -62,29 +47,12 @@
     <tic-tac-toe></tic-tac-toe>
     <div >
       <div class="bigTextContener">
-        <h1>What is this game?</h1>
-        <p>
-          Blood on the Clocktower is a social game of deduction and
-          deception, lies and logic, murder and mystery, for 5 to 20
-          players. During the day, players talk and socialize as a group,
-          or go into private conversations to gather information, share
-          what they know, or spread lies. During the night, players
-          close their eyes, whilst some good players wake to learn
-          valuable information and the demon and its minions wake
-          up to spread their mischief.
+        <h1 id="MLtext1"></h1>
+        <p id="MLtext2">
         </p>
-        <p>
-          Each player is a unique character, with a powerful ability to
-          use or a troublesome penalty to avoid. Clocktower is mostly
-          a talking game, with almost no physical pieces for the
-          players to use. Players win or lose by their wits, their insight,
-          and their ability to convince others about who should live
-          and who should die.
-          Blood on the Clocktower games usually run for 30 to 90
-          minutes, and you may find yourselves playing several games
-          one after the other.
+        <p id="MLtext3">
         </p>
-        <h1 id="editionChoose">Choose your Edition:</h1>
+        <h1 id="MLtext4" id="editionChoose"></h1>
       </div>          
       
       </div>
@@ -115,19 +83,9 @@
       <!-- Wersja widoku po naciśnięciu Ikony brewing -->
       <div class="header brewingHeader">
         <h1>Trouble Brewing</h1>
-        <p>
-          has a little bit of everything. Some characters passively receive
-          information, some need to take action to learn who is who, while some
-          simply want to bait the Demon into attacking them. Both good and evil
-          can gain the upper hand by making well-timed sacrifices. Trouble
-          Brewing is a relatively straightforward Demon-hunt, but evil has a
-          number of dastardly misinformation tricks up their sleeves, so the
-          good players best question what they think they know if they hope to
-          survive.
+        <p id="MLtext5">
         </p>
-        <p>
-          Beginner. Recommended for players and Storytellers new to Blood on the
-          Clocktower or to social deception games.
+        <p id="MLtext6">
         </p>
         <iframe src="images/TroubleBrewing.pdf" width="100%" height=1200px></iframe>
       </div>
@@ -136,37 +94,18 @@
       <!-- Wersja widoku po naciśnięciu Ikony Violets -->
       <div class="header violetsHeader">
         <h1>Sects & Violets</h1>
-        <p>
-          is the craziest of the three editions included in the base set. Good
-          characters get amazing information each and every night. However, the
-          evil team is extremely varied and threatening and can throw massive
-          confusion into the mix. Characters change alignment. Players change
-          characters. Even the evil team can lose track of who is who. This is
-          also the first appearance of madness, which throws all manner of
-          spanners into the works.
+        <p id="MLtext7">
         </p>
-        <p>
-          Intermediate. Recommended for players who want to do wild and
-          unexpected things, pushing the limits of what can be achieved in a
-          bluffing game.
+        <p id="MLtext8">
         </p>
         <iframe src="images/SectsAndViolets.pdf" width="100%" height=1200px></iframe>
       </div>
       <!-- Wersja widoku po naciśnięciu Ikony Bad Moon -->
       <div class="header badMoonHeader">
         <h1>Bad Moon Rising</h1>
-        <p>
-          is a death extravaganza. Demons kill multiple times per night, and
-          Minions get in on the action too. Good players can take great risks to
-          gain reliable information, but may accidentally kill their friends in
-          the process. Luckily, there are many options to keep players alive
-          long past their use-by date. If the good team cannot determine which
-          specific Minions and Demons are in play, however, their doom is all
-          but certain.
+        <p id="MLtext9">
         </p>
-        <p>
-          Intermediate. Recommended for players who are proactive, dedicated to
-          working as a team, and don’t fear dying.
+        <p id="MLtext10">
         </p>
         <iframe src="images/BadMoonRising.pdf" width="100%" height=1200px></iframe>
       </div>
@@ -177,9 +116,9 @@
         <c-arousel></c-arousel>
       </div>
       <div></div>
-      <h1>Footer</h1>
-      <p>If you fill like this page is lack of content. Click any logo.</p>
-      <p>Yeee... propably gonna add some content here in the future</p>
+      <h1 id="MLtext11"></h1>
+      <p id="MLtext12"></p>
+      <p id="MLtext13"></p>
     </div>
   </body>
 </html>

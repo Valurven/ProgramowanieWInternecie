@@ -78,7 +78,7 @@ fetch("/ProgramowanieWInternecie/language/pl.json")
             <div>${response.testt}</div>
             <div>${response.testtt}</div>
       `;
-      
+
    document.querySelector("#MLtext1").innerHTML = `${response.MLtext1}`;
    document.querySelector("#MLtext2").innerHTML = `${response.MLtext2 }`;
    document.querySelector("#MLtext3").innerHTML = `${response.MLtext3 }`;
